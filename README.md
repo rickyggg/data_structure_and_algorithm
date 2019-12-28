@@ -1,3 +1,3 @@
 # campus-recruitment
 ## Algorithm
-QuickSort
+[QuickSort](/Algorithm/QuickSort.cpp)
