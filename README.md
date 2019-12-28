@@ -1,3 +1,3 @@
 # campus-recruitment
-##Algorithm
+## Algorithm
 QuickSort
