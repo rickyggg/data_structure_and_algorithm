@@ -1,3 +1,5 @@
-# campus-recruitment
+# Data Structure and Algorithm in C++
 ## Algorithm
-[QuickSort](/Algorithm/QuickSort.cpp)
+### Sort
+[Bubble](/Algorithm/Sort/Bubble.cpp)
+[QuickSort](/Algorithm/Sort/QuickSort.cpp)
