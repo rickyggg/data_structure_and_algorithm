@@ -1,5 +1,5 @@
 // O(N^2)
-void BubbleSort(int list[], int len) {
+void BubbleSort(int *list, int len) {
     for (int i = 0; i < len; i++) {
         int flag = 0;
         for (int j = 1; j < len - i; j++) {
