@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+// O(logN)
 void InsertSort(int *list, int left, int right) {
   int j;
   int temp;
@@ -39,18 +38,4 @@ void QSort(int *v, int left, int right) {
   } else {
     InsertSort(v, left, right);
   }
-}
-int main() {
-  int n;
-  cin >> n;
-  int list[n];
-  for (int i = 0; i < n; i++) cin >> list[i];
-  QuickSort(list, 0, n - 1);
-  for (int i = 0; i < n; i++) {
-    if (i == n - 1)
-      cout << list[i] << endl;
-    else
-      cout << list[i] << ' ';
-  }
-  return 0;
 }
