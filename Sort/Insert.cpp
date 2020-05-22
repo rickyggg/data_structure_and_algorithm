@@ -1,4 +1,4 @@
-// O(N)
+// O(N^2)
 void InsertSort(int list[], int len) {
     int j;
     int temp;
