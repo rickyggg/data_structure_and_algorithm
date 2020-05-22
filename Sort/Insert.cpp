@@ -1,5 +1,5 @@
 // O(N^2)
-void InsertSort(int list[], int len) {
+void InsertSort(int *list, int len) {
     int j;
     int temp;
     for (int i = 1; i < len; i++) {
