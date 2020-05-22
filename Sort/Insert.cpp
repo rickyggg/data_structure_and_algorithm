@@ -5,7 +5,7 @@ void InsertSort(int *list, int len) {
   for (int i = 1; i < len; i++) {
     temp = list[i];
     for (j = i - 1; j >= 0 && list[j] > temp; j--)
-      list[i] = list[j];
-    list[i] = temp;
+      list[j + 1] = list[j];
+    list[j + 1] = temp;
   }
 }
