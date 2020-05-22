@@ -2,4 +2,5 @@
 ## Algorithm
 ### Sort
 [Bubble](/Algorithm/Sort/Bubble.cpp)<br>
-[QuickSort](/Algorithm/Sort/QuickSort.cpp)
+[Insert](/Algorithm/Sort/Insert.cpp)<br>
+[QuickSort](/Algorithm/Sort/QuickSort.cpp)<br>
