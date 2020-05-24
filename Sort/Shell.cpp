@@ -6,9 +6,9 @@ void shell(int *list, int n) {
     for (int i = d; i < n; i++) {
       if (list[i] < list[i - d]) {
         tmp = list[i];
-        for (j = i - d; j >= 0 && tmp < list[j]; j -= d)
-          list[j + d] = list[j];
-        list[j + d] = tmp;
+        for (j = i; j >= d && tmp < list[j - d]; j -= d)
+          list[j] = list[j - d];
+        list[j] = tmp;
       }
     }
   }
