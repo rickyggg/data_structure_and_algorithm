@@ -5,4 +5,5 @@
 [Insert](/Sort/Insert.cpp)<br>
 [Select](/Sort/Select.cpp)<br>
 [Shell](/Sort/Shell.cpp)<br>
+[Heap](/Sort/Heap.cpp)<br>
 [QuickSort](/Sort/QuickSort.cpp)<br>
