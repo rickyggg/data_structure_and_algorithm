@@ -1,4 +1,4 @@
-// O(logN)
+// O(N log N)
 void InsertSort(int *list, int left, int right) {
   int j;
   int temp;
