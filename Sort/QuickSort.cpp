@@ -22,7 +22,7 @@ int Median3(int *v, int left, int right) {
 }
 void QSort(int *v, int left, int right) {
   int i, j, pivot;
-  if (left + 15 <= right) {
+  if (left + 10 <= right) {
     pivot = Median3(v, left, right);
     i = left;
     j = right - 1;
