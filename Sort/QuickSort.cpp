@@ -4,15 +4,19 @@ void InsertSort(int *list, int left, int right) {
   int temp;
   for (int i = left; i <= right; i++) {
     temp = list[i];
-    for (j = i - 1; j >= 0 && list[j] > temp; j--) list[j + 1] = list[j];
+    for (j = i - 1; j >= 0 && list[j] > temp; j--)
+      list[j + 1] = list[j];
     list[j + 1] = temp;
   }
 }
 int Median3(int *v, int left, int right) {
   int center = (left + right) / 2;
-  if (v[left] > v[center]) swap(v[left], v[center]);
-  if (v[left] > v[right]) swap(v[left], v[right]);
-  if (v[center] > v[right]) swap(v[center], v[right]);
+  if (v[left] > v[center])
+    swap(v[left], v[center]);
+  if (v[left] > v[right])
+    swap(v[left], v[right]);
+  if (v[center] > v[right])
+    swap(v[center], v[right]);
   swap(v[center], v[right - 1]);
   return v[right - 1];
 }
