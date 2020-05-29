@@ -10,8 +10,8 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 [Heap Sort](./Sort/Heap.cpp) | O(n*log<sub>2</sub>n)|O(n*log<sub>2</sub>n)|O(1)|Unstable
 [Merge Sort](./Sort/Merge.h) | O(n*log<sub>2</sub>n) | O(n*log<sub>2</sub>n)|O(n)| Stable
 [Shell Sort](./Sort/Shell.h) | O(n*log<sup>2</sup>n)|O(n<sup>2</sup>)|O(1)|Unstable
-<!--[Count Sort](./Sort/Count.h) | O(n+m)|O(n+m)|O(n+m)|Stable
-[Bucket Sort](./Sort/Bucket.h) | O(n+m)|O(n<sup>2</sup>)|O(n*m)|Stable
+[Count Sort](./Sort/Count.h) | O(n+k)|O(n+k)|O(n+k)|Stable
+<!--[Bucket Sort](./Sort/Bucket.h) | O(n+m)|O(n<sup>2</sup>)|O(n*m)|Stable
 [Radix Sort](./Sort/Radix.h) | O(k*n)|O(n<sup>2</sup>)| |Stable
 -->
 > * Are arranged in ascending order
