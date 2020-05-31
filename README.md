@@ -19,4 +19,5 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 //> * k: represents the number of "digits" in the value
 > * k: represents the max number of the data
 > * n: represents the size of the data
-> * m: represents the maximum value minus the minimum value of the data
+//> * m: represents the maximum value minus the minimum value of the data
+> * m: represents the number of the buckets
