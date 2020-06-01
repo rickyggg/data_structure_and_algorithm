@@ -18,4 +18,6 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 > * k: represents the max number of the data (Count Sort)
 > * m: represents the number of the buckets
 > * k: represents the number of "digits" in the value (Radix Sort)
-//> * m: represents the maximum value minus the minimum value of the data
+<!--
+* m: represents the maximum value minus the minimum value of the data
+-->
