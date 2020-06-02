@@ -21,3 +21,8 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 <!--
 * m: represents the maximum value minus the minimum value of the data
 -->
+### Find
+Find Algorithm | Average Time Complexity | Spatial Complexity
+--- | --- | ---
+[Sequential Search](./Find/Sequential.h) | O(n) | O(1)
+[Binary Search](./Find/Binary.h) | O(log<sub>2</sub>n) | O(1)
