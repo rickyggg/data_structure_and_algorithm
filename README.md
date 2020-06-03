@@ -26,3 +26,4 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 --- | --- | ---
 [Sequential Search](./Find/Sequential.h) | O(n) | O(1)
 [Binary Search](./Find/Binary.h) | O(log<sub>2</sub>n) | O(1)
+[Hash Search](./Find/Hash.h) | O(1) | O(n)
