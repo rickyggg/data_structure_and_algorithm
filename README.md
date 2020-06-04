@@ -9,7 +9,7 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 [Quick Sort](./Sort/Quick.h) | O(n*log<sub>2</sub>n) | O(n<sup>2</sup>) | O(log<sub>2</sub>n) | Unstable
 [Heap Sort](./Sort/Heap.h) | O(n*log<sub>2</sub>n)| O(n*log<sub>2</sub>n)|O(1)|Unstable
 [Merge Sort](./Sort/Merge.h) | O(n*log<sub>2</sub>n) | O(n*log<sub>2</sub>n)|O(n)| Stable
-[Shell Sort](./Sort/Shell.h) | O(n*log<sup>2</sup>n)|O(n<sup>2</sup>)|O(1)|Unstable
+[Shell Sort](./Sort/Shell.h) | O(n*log<sub>2</sub>n)|O(n<sup>2</sup>)|O(1)|Unstable
 [Count Sort](./Sort/Count.h) | O(n+k)|O(n+k)|O(n+k)|Stable
 [Bucket Sort](./Sort/Bucket.h) | O(n+m)|O(n<sup>2</sup>)|O(n+m)|Stable
 [Radix Sort](./Sort/Radix.h) | O(k*n) | O(k*n)| O(k+n) |Stable
@@ -21,9 +21,16 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 <!--
 * m: represents the maximum value minus the minimum value of the data
 -->
+
 ### Find
 Find Algorithm | Average Time Complexity | Spatial Complexity
 --- | --- | ---
 [Sequential Search](./Find/Sequential.h) | O(n) | O(1)
 [Binary Search](./Find/Binary.h) | O(log<sub>2</sub>n) | O(1)
 [Hash Search](./Find/Hash.h) | O(1) | O(n)
+
+### Graph
+#### Graph Traversal
+Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
+--- | --- | --- | ----
+[BFS](./Graph/BFS.h) | Adjacency matrix ｜ O(v<sup>2</sup>) | O(v<sup>2</sup>)
