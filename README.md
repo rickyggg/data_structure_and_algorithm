@@ -32,5 +32,5 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 ### Graph
 #### Graph Traversal
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
---- | --- | --- | ----
+--- | --- | --- | ---
 [BFS](./Graph/BFS.h) | Adjacency matrix ｜ O(v<sup>2</sup>) | O(v<sup>2</sup>)
