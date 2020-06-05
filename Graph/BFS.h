@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <vector>
 using namespace std;
 static const int maxv = 10;
 static bool G[maxv][maxv];
