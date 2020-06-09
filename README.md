@@ -34,6 +34,6 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [BFS](./Graph/BFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-    | Adjacency list | O(v+e) | O(v+e)
+[BFS](./Graph/BFS.h) | Adjacency list | O(v+e) | O(v+e)
 [DFS](./Graph/DFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-    | Adjacency list | O(v+e) | O(v+e)
+[DFS](./Graph/DFS.h) | Adjacency list | O(v+e) | O(v+e)
