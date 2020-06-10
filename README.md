@@ -41,9 +41,10 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 ### Others
 #### Disjoint Sets
 Alogorithm | Average Time Complexity | Spatial Complexity
+--- | --- | ---
 Without Optimization | O(m*n) | O(n)
 Union by Size | O(m*log<sub>2</sub>) | O(n)
 Path Compression | O(m*log<sub>2</sub>) | O(n)
-Both Opimization | O(\alpha (n)) | O(n)
+Both Opimization | O($\alpha$ (n)) | O(n)
 > * m: represents the number of operations
 > * n: represents the size of the data
