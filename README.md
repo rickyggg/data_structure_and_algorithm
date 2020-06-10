@@ -37,3 +37,13 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 [BFS](./Graph/BFS.h) | Adjacency list | O(v+e) | O(v+e)
 [DFS](./Graph/DFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 [DFS](./Graph/DFS.h) | Adjacency list | O(v+e) | O(v+e)
+
+### Others
+#### Disjoint Sets
+Alogorithm | Average Time Complexity | Spatial Complexity
+Without Optimization | O(m*n) | O(n)
+Union by Size | O(m*log<sub>2</sub>) | O(n)
+Path Compression | O(m*log<sub>2</sub>) | O(n)
+Both Opimization | O(\alpha (n)) | O(n)
+> * m: represents the number of operations
+> * n: represents the size of the data
