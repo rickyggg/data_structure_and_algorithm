@@ -43,8 +43,9 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 Alogorithm | Average Time Complexity | Spatial Complexity
 --- | --- | ---
 Without Optimization | O(m*n) | O(n)
-Union by Size | O(m*log<sub>2</sub>) | O(n)
-Path Compression | O(m*log<sub>2</sub>) | O(n)
-Both Opimization | O(![](http://latex.codecogs.com/png.latex? \alpha) (n)) | O(n)
+Union by Size | O(m*log<sub>2</sub>n) | O(n)
+Path Compression | O(m*log<sub>2</sub>n) | O(n)
+Both Opimization | O(a(n)) | O(n)
+> * a: represents the Ackeramann inverse function
 > * m: represents the number of operations
 > * n: represents the size of the data
