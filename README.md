@@ -34,9 +34,9 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [BFS](./Graph/BFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-[BFS](./Graph/BFS.h) | Adjacency list | O(v+e) | O(v+e)
+- | Adjacency list | O(v+e) | O(v+e)
 [DFS](./Graph/DFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-[DFS](./Graph/DFS.h) | Adjacency list | O(v+e) | O(v+e)
+- | Adjacency list | O(v+e) | O(v+e)
 > * v: represents the number of the vertexs
 > * e: represents the number of the edges
 
@@ -44,7 +44,7 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [TopSort](./Graph/TopSort.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-[TopSort](./Graph/TopSort.h) | Adjacency list | O(v+e) | O(v+e)
+- | Adjacency list | O(v+e) | O(v+e)
 
 ### Others
 #### [Disjoint Sets](./Others/DisjointSets.h)
