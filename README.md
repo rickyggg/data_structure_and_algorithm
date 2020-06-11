@@ -54,6 +54,6 @@ Without Optimization | O(m*n) | O(n)
 Union by Size | O(m*log<sub>2</sub>n) | O(n)
 Path Compression | O(m*log<sub>2</sub>n) | O(n)
 Both Opimization | O(a(n)) | O(n)
-> * a: represents the Ackeramann inverse function
+> * a: represents the inverse Ackeramann function
 > * m: represents the number of operations
 > * n: represents the size of the data
