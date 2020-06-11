@@ -37,6 +37,8 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 [BFS](./Graph/BFS.h) | Adjacency list | O(v+e) | O(v+e)
 [DFS](./Graph/DFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 [DFS](./Graph/DFS.h) | Adjacency list | O(v+e) | O(v+e)
+> * v: represents the number of the vertexs
+> * e: represents the number of the edges
 
 ### Others
 #### Disjoint Sets
