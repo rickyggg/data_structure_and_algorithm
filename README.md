@@ -44,7 +44,7 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [TopSort](./Graph/TopSort.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
-[TopSort](./Graph/TopSort.h) | Adjacency list | O(v<sup>2</sup>) | O(v<sup>2</sup>)
+[TopSort](./Graph/TopSort.h) | Adjacency list | O(v+e) | O(v+e)
 
 ### Others
 #### Disjoint Sets
