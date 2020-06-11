@@ -40,6 +40,12 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 > * v: represents the number of the vertexs
 > * e: represents the number of the edges
 
+#### Top Sort
+Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
+--- | --- | --- | ---
+[TopSort](./Graph/TopSort.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
+[TopSort](./Graph/TopSort.h) | Adjacency list | O(v<sup>2</sup>) | O(v<sup>2</sup>)
+
 ### Others
 #### Disjoint Sets
 Alogorithm | Average Time Complexity | Spatial Complexity
