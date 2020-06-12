@@ -57,3 +57,4 @@ Both Opimization | O(a(n)) | O(n)
 > * a: represents the inverse Ackeramann function
 > * m: represents the number of operations
 > * n: represents the size of the data
+1
