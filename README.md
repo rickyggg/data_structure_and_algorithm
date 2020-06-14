@@ -1,5 +1,15 @@
 # Data Structure and Algorithm in C++
 
+## Data Structure
+
+### Linked List
+
+### Stack
+
+### Queue
+
+### Heap
+
 ## Algorithm
 
 ### Sort
@@ -7,7 +17,7 @@
 Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Complexity | Data Object Stability
 ---|---|---|---|---
 [Bubble Sort](./Sort/Bubble.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|Stable
-[Selection Sort](./Sort/Select.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|The array is unstable and the linked list is stable
+[Selection Sort](./Sort/Select.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|array -- unstable, linked list -- stable
 [Insert Sort](./Sort/Insert.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|Stable
 [Quick Sort](./Sort/Quick.h) | O(n*log<sub>2</sub>n) | O(n<sup>2</sup>) | O(log<sub>2</sub>n) | Unstable
 [Heap Sort](./Sort/Heap.h) | O(n*log<sub>2</sub>n)| O(n*log<sub>2</sub>n)|O(1)|Unstable
@@ -36,6 +46,16 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 [Binary Search Tree](./Find/BST.h) | O(log<sub>2</sub>n) | O(1)
 [Hash Search](./Find/Hash.h) | O(1) | O(n)
 
+### Tree
+
+#### Tree Traversal
+
+##### [Recursion](./Tree/RecursivelyTraverse.h)
+
+##### Without Recursive
+
+#### AVL Tree
+
 ### Graph
 
 #### Graph Traversal
@@ -57,6 +77,10 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 [TopSort](./Graph/TopSort.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 \- | Adjacency list | O(v+e) | O(v+e)
 
+#### Shortest Path
+
+#### Minimum Spanning Tree
+
 ### Others
 
 #### [Disjoint Sets](./Others/DisjointSets.h)
@@ -71,3 +95,5 @@ Both Opimization | O(a(n)) | O(n)
 > * a: represents the inverse Ackeramann function
 > * m: represents the number of operations
 > * n: represents the size of the data
+
+#### KMP
