@@ -1,6 +1,9 @@
 # Data Structure and Algorithm in C++
+
 ## Algorithm
+
 ### Sort
+
 Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Complexity | Data Object Stability
 ---|---|---|---|---
 [Bubble Sort](./Sort/Bubble.h) | O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(1)|Stable
@@ -13,16 +16,19 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 [Count Sort](./Sort/Count.h) | O(n+k)|O(n+k)|O(n+k)|Stable
 [Bucket Sort](./Sort/Bucket.h) | O(n+m)|O(n<sup>2</sup>)|O(n+m)|Stable
 [Radix Sort](./Sort/Radix.h) | O(k*n) | O(k*n)| O(k+n) |Stable
+
 > * Are arranged in ascending order
 > * n: represents the size of the data
 > * k: represents the max number of the data (Count Sort)
 > * m: represents the number of the buckets
 > * k: represents the number of "digits" in the value (Radix Sort)
+
 <!--
 * m: represents the maximum value minus the minimum value of the data
 -->
 
 ### Find
+
 Find Algorithm | Average Time Complexity | Spatial Complexity
 --- | --- | ---
 [Sequential Search](./Find/Sequential.h) | O(n) | O(1)
@@ -31,30 +37,37 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 [Hash Search](./Find/Hash.h) | O(1) | O(n)
 
 ### Graph
+
 #### Graph Traversal
+
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [BFS](./Graph/BFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 \- | Adjacency list | O(v+e) | O(v+e)
 [DFS](./Graph/DFS.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 \- | Adjacency list | O(v+e) | O(v+e)
+
 > * v: represents the number of the vertexs
 > * e: represents the number of the edges
 
 #### Top Sort
+
 Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [TopSort](./Graph/TopSort.h) | Adjacency matrix | O(v<sup>2</sup>) | O(v<sup>2</sup>)
 \- | Adjacency list | O(v+e) | O(v+e)
 
 ### Others
+
 #### [Disjoint Sets](./Others/DisjointSets.h)
+
 Alogorithm | Average Time Complexity | Spatial Complexity
 --- | --- | ---
 Without Optimization | O(m*n) | O(n)
 Union by Size | O(m*log<sub>2</sub>n) | O(n)
 Path Compression | O(m*log<sub>2</sub>n) | O(n)
 Both Opimization | O(a(n)) | O(n)
+
 > * a: represents the inverse Ackeramann function
 > * m: represents the number of operations
 > * n: represents the size of the data
