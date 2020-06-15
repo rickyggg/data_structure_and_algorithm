@@ -79,6 +79,11 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 
 #### Shortest Path
 
+Category | Algorithm | Data Sturcture | Average Time Complexity | Spatial Complexity
+--- | --- | --- | --- | ---
+[Unweighted](./Graph/Unweighted.h) | BFS | Adjacency Table | O(v+e) | O(v+e)
+weighted | Dijkstra | Fibonacci Heap | O(e+vlogv) | \-
+
 #### Minimum Spanning Tree
 
 ### Others
