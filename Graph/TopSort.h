@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 static const int maxv = 10;
-static vector<int> G[maxv]; // Adjacency Table
+static vector<int> G[maxv]; // Adjacency List
 void Sta_Indegree(vector<vector<int>> G, vector<int> &Indegree) {
   for (auto x : G) {
     for (auto y : x)

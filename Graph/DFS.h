@@ -3,7 +3,7 @@
 using namespace std;
 static const int maxv = 10;
 static bool G_AdjMat[maxv][maxv];  // Adjacency Matrix
-static vector<int> G_AdjTab[maxv]; // Adjacency Table
+static vector<int> G_AdjTab[maxv]; // Adjacency List
 static vector<int> visited(maxv, 0);
 static int v, e;
 void AddEdge(vector<int> adjacency[], int u, int v) {
