@@ -50,9 +50,9 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 
 #### Tree Traversal
 
-##### [Recursion](./Tree/RecursivelyTraverse.h)
+[Recursion](./Tree/RecursivelyTraverse.h)
 
-##### Without Recursive
+Without Recursive
 
 #### AVL Tree
 
