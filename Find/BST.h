@@ -1,16 +1,18 @@
 // O(logn)
+#include <iostream>
+using namespace std;
 struct TreeNode {
   int Element;
-  int *Left;
-  int *Right;
+  TreeNode *Left;
+  TreeNode *Right;
 };
-int *Find(int x, TreeNode *T) {
-  if (T = nullptr)
+TreeNode *SearchBST(int x, TreeNode *T) {
+  if (T == nullptr)
     return nullptr;
   if (x < T->Element)
-    return Find(X, T->Left);
+    return SearchBST(x, T->Left);
   else if (x > T->Element)
-    return Find(X, T->Right);
+    return SearchBST(x, T->Right);
   else
     return T;
 }
