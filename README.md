@@ -82,7 +82,7 @@ Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
 Category | Algorithm | Data Sturcture | Average Time Complexity | Spatial Complexity
 --- | --- | --- | --- | ---
 [Unweighted](./Graph/Unweighted.h) | BFS | Adjacency List | O(v+e) | O(v+e)
-weighted | Dijkstra | Fibonacci Heap | O(e+vlogv) | \-
+weighted | [Dijkstra](./Graph/Dijkstra.h) | Fibonacci Heap | O(e+vlogv) | \-
 
 #### Minimum Spanning Tree
 
