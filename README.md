@@ -83,6 +83,7 @@ Category | Algorithm | Data Sturcture | Average Time Complexity | Spatial Comple
 --- | --- | --- | --- | ---
 [Unweighted](./Graph/Unweighted.h) | BFS | Adjacency List | O(v+e) | O(v+e)
 weighted | [Dijkstra](./Graph/Dijkstra.h) | Fibonacci Heap | O(e+vlogv) | \-
+Both | [Floyd](./Graph/Floyd.h) | Adjacency Matrix | O(v<sup>3</sup>) | O(v<sup>2</sup>)
 
 #### Minimum Spanning Tree
 
