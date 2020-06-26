@@ -91,7 +91,7 @@ Algorithm | Data Structure | Average Time Complexity | Spatial Complexity
 --- | --- | --- | ---
 [Prim](./Graph/Prim.h) | Adjacency Matrix | O(v^2) | O(v^2)
 \- | Binary Heap | O(elogv) | \-
-[Krusal](./Graph/Krusal.h) | Heap | O(elogv) | \-
+[Kruskal](./Graph/Krusal.h) | Heap | O(elogv) | \-
 
 ### Others
 
