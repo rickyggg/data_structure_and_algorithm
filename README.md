@@ -108,4 +108,6 @@ Both Opimization | O(a(n)) | O(n)
 > * m: represents the number of operations
 > * n: represents the size of the data
 
+#### Huffman
+
 #### KMP
