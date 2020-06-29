@@ -4,6 +4,11 @@
 
 ### Linked List
 
+Data Structure | Operation | Average Time Complexity
+--- | ---
+Array | Insert/Delete | O(n)
+[Linked List](./DataStructure/LinkedList.h) | \- | O(1)
+
 ### Stack
 
 ### Queue
@@ -15,7 +20,7 @@
 ### Sort
 
 Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Complexity | Data Object Stability
----|---|---|---|---
+--- | --- | --- | --- | ---
 [Bubble Sort](./Sort/Bubble.h) | O(n^2)|O(n^2)|O(1)|Stable
 [Selection Sort](./Sort/Select.h) | O(n^2)|O(n^2)|O(1)|array -- unstable, linked list -- stable
 [Insert Sort](./Sort/Insert.h) | O(n^2)|O(n^2)|O(1)|Stable
