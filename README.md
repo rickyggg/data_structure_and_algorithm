@@ -9,7 +9,7 @@ Data Structure | Operation | Average Time Complexity
 Array | Insert/Delete | O(n)
 [Linked List](./DataStructure/LinkedList.h) | \- | O(1)
 
-### Stack
+### [Stack](./DataStructure/Stack.h)
 
 ### Queue
 
