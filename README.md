@@ -5,7 +5,7 @@
 ### Linked List
 
 Data Structure | Operation | Average Time Complexity
---- | ---
+--- | --- | ---
 Array | Insert/Delete | O(n)
 [Linked List](./DataStructure/LinkedList.h) | \- | O(1)
 
