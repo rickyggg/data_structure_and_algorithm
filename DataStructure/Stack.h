@@ -9,3 +9,10 @@ void Push(int X, Stack S) {
   Tmp->Next = S->Next;
   S->Next = Tmp;
 }
+int Pop(Stack S) {
+  Stack Tmp = S;
+  int ans = S->Data;
+  S = S->Next;
+  delete Tmp;
+  return ans;
+}
