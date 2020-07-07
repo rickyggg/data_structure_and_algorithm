@@ -1,9 +1,9 @@
-#include <iostream>
 struct Node {
   int Data;
   Node *Next;
 };
 typedef Node *List;
+int IsEmpty(List L) { return L->Next == nullptr; }
 List FindPrevious(int X, List L) {
   List P;
   P = L;
@@ -17,7 +17,7 @@ void Delete(int X, List L) {
   if (P->Next) {
     Tmp = P->Next;
     P->Next = Tmp->Next;
-    // Delete(Tmp);
+    delete Tmp;
   }
 }
 void Insert(int X, List L, List P) {
