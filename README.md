@@ -13,7 +13,7 @@ Array | Insert/Delete | O(n)
 
 ### [Queue](./DataStructure/Queue.h)
 
-### Heap
+### [Heap](./DataStructure/Heap.h)
 
 ## Algorithm
 
