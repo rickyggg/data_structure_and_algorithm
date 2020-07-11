@@ -30,13 +30,13 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 [Shell Sort](./Sort/Shell.h) | O(n*logn)|O(n^2)|O(1)|Unstable
 [Count Sort](./Sort/Count.h) | O(n+k)|O(n+k)|O(n+k)|Stable
 [Bucket Sort](./Sort/Bucket.h) | O(n+m)|O(n^2)|O(n+m)|Stable
-[Radix Sort](./Sort/Radix.h) | O(p*(n+m)) | O(p*(n+m))| O(p*m+n) |Stable
+[Radix Sort](./Sort/Radix.h) | O(d*(n+m)) | O(d*(n+m))| O(n+m) |Stable
 
 > * Are arranged in ascending order
 > * n: represents the size of the data
 > * k: represents the max number of the data (Count Sort)
 > * m: represents the number of the buckets
-> * p: represents the number of "digits" in the value (Radix Sort)
+> * d: represents the number of "digits" in the value (Radix Sort)
 
 <!--
 * m: represents the maximum value minus the minimum value of the data

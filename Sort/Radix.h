@@ -1,4 +1,4 @@
-// O(kN) LSD
+// O(d*(m+n)) LSD(<-)
 #include <algorithm>
 using namespace std;
 int Max_bit(int *list, int len) {
@@ -23,7 +23,7 @@ void RadixSort(int *list, int len) {
       count[k]++;
     }
     for (j = 1; j < 10; j++)
-      count[j] = count[j - 1] + count[j];
+      count[j] += count[j - 1];
     for (j = len - 1; j >= 0; j--) {
       k = (list[j] / radix) % 10;
       temp[--count[k]] = list[j];
