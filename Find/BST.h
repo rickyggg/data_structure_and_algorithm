@@ -44,7 +44,8 @@ TreeNode *Delete(int x, TreeNode *T) {
     T->Left = Delete(x, T->Left);
   } else if (x > T->Element) {
     T->Right = Delete(x, T->Right);
-  } else if (T->Left && T->Right) {
+  }
+  if (T->Left && T->Right) { // two children
     Tmp = FindMin(T->Right);
     T->Element = Tmp->Element;
     T->Right = Delete(T->Element, T->Right);
