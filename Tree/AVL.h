@@ -41,15 +41,18 @@ Tree Insert(Tree root, int x) {
     root->Left = Insert(root->Left, x);
     if (GetHeight(root->Left) - GetHeight(root->Right) == 2) {
       if (x < root->Left->Element)
-        root = RotateLeft(root);
+        root = RotateRight(root);
       else
         root = RotateLeftRight(root);
     }
   } else if (x > root->Element) {
     root->Right = Insert(root->Right, x);
-    if (GetHeight(root->Left) - GetHeight(root->Right) == -2)
-      root =
-          x > root->Right->Element ? RotateLeft(root) : RotateRightLeft(root);
+    if (GetHeight(root->Left) - GetHeight(root->Right) == -2) {
+      if (x > root->Right->Element)
+        root = RotateLeft(root);
+      else
+        root = RotateRightLeft(root);
+    }
   }
   return root;
 }
