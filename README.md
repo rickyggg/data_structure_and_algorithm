@@ -19,10 +19,12 @@ Array | Insert/Delete | O(n)
 
 ### Sort
 
+#### Internal Sort
+
 Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Complexity | Data Object Stability
 --- | --- | --- | --- | ---
 [Bubble Sort](./Sort/Bubble.h) | O(n^2)|O(n^2)|O(1)|Stable
-[Selection Sort](./Sort/Select.h) | O(n^2)|O(n^2)|O(1)|array -- unstable, linked list -- stable
+[Selection Sort](./Sort/Select.h) | O(n^2)|O(n^2)|O(1)|array -- unstable  linked list -- stable
 [Insert Sort](./Sort/Insert.h) | O(n^2)|O(n^2)|O(1)|Stable
 [Quick Sort](./Sort/Quick.h) | O(n*logn) | O(n^2) | O(logn) | Unstable
 [Heap Sort](./Sort/Heap.h) | O(n*logn)| O(n*logn)|O(1)|Unstable
@@ -41,6 +43,8 @@ Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Co
 <!--
 * m: represents the maximum value minus the minimum value of the data
 -->
+
+#### External Sort
 
 ### Find
 
@@ -112,6 +116,8 @@ Both Opimization | O(a(n)) | O(n)
 > * a: represents the inverse Ackeramann function
 > * m: represents the number of operations
 > * n: represents the size of the data
+
+#### Backtracking
 
 #### Huffman
 
