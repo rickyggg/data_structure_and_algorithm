@@ -15,6 +15,12 @@ Array | Insert/Delete | O(n)
 
 ### [Heap](./DataStructure/Heap.h)
 
+Operation | Average Time Complexity
+--- | ---
+BuildHeap | O(n)
+Insert | O(logn)
+DeleteMin | O(logn)
+
 ## Algorithm
 
 ### Sort
