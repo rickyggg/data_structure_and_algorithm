@@ -123,6 +123,14 @@ Both Opimization | O(a(n)) | O(n)
 > * m: represents the number of operations
 > * n: represents the size of the data
 
+#### Kth Largest
+
+Alogorithm | Average Time Complexity | Worst Time Complexity
+--- | --- | ---
+Normal | O(n^2) | O(n^2)
+Heap | O(n*logn) | O(n*logn)
+QSelect | O(n) | O(n^2)
+
 #### Backtracking
 
 #### Huffman
