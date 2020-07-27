@@ -24,8 +24,7 @@ void TopSort(vector<vector<int>> G, int maxv, vector<int> &Indegree) {
     ++cnt;
     for (int i = 0; i < G[temp].size(); i++) {
       int v = G[temp][i];
-      Indegree[v]--;
-      if (Indegree[v] == 0)
+      if (--Indegree[v] == 0)
         q.push(v);
     }
   }
