@@ -131,6 +131,14 @@ Normal | O(n^2) | O(n^2)
 Heap | O(n*logn) | O(n*logn)
 QSelect | O(n) | O(n^2)
 
+#### Dynamic Programming
+
+**First**:<br>Define the Array
+**Second**:<br>Find the Relation
+**Third**:<br>Confirm the Initial Value
+
+Example：[Fibonacci_dp](./Others/Fibonacci_dp.h)
+
 #### Backtracking
 
 #### Huffman
