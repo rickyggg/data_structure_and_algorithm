@@ -135,7 +135,7 @@ QSelect | O(n) | O(n^2)
 
 **First**:
 
-Define the Array
+Define the Array(save the history data)
 
 **Second**:
 
@@ -147,7 +147,15 @@ Confirm the Initial Value
 
 Example：[Fibonacci_dp](./Others/Fibonacci_dp.h)
 
-#### Backtracking
+#### Backtrack
+
+1. Global Variable and Temp(save the result)
+
+2. End Condition
+
+3. Recursive
+
+Example:[LeetCode_131](./Others/Backtrack.h)
 
 #### Huffman
 
