@@ -133,9 +133,9 @@ QSelect | O(n) | O(n^2)
 
 #### Dynamic Programming
 
-**First**:<br>Define the Array
-**Second**:<br>Find the Relation
-**Third**:<br>Confirm the Initial Value
+**First**: <br> Define the Array
+**Second**: <br> Find the Relation
+**Third**: <br> Confirm the Initial Value
 
 Example：[Fibonacci_dp](./Others/Fibonacci_dp.h)
 
