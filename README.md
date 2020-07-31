@@ -69,7 +69,11 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 
 Without Recursive
 
-#### [AVL](./Tree/AVL.h)
+#### Self-Balanced tree
+
+[AVL](./Tree/AVL.h)
+
+[RbTree](./Tree/RbTree.h)
 
 ### Graph
 
