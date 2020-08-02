@@ -47,7 +47,7 @@ void HandleReorient(int Item, RedBlackTree T) {
   }
   T->Right->Color = Black;
 }
-RedBlackTree Insert(int Item, RedBlackTree T) {
+static RedBlackTree Insert(int Item, RedBlackTree T) {
   X = P = GP = T;
   NullNode->Element = Item;
   while (X->Element != Item) {
