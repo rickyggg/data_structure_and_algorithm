@@ -1,6 +1,7 @@
 #include <string>
 using namespace std;
-int next1[10];
+static int cnt = 100;
+int next1[cnt];
 int KMP(string t, string p) {
   int i, j;
   while (i < t.size() && j < p.size()) {
