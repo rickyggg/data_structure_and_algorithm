@@ -65,7 +65,7 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 
 #### Tree Traversal
 
-[Recursion](./Tree/RecursivelyTraverse.cpp)
+[Tree Travelsal Recursion](./Tree/RecursivelyTraverse.cpp)
 
 Without Recursive
 
@@ -137,17 +137,9 @@ QSelect | O(n) | O(n^2)
 
 #### Dynamic Programming
 
-**First**:
+Define the Array(save the history data) --> Find the Relation
 
-Define the Array(save the history data)
-
-**Second**:
-
-Find the Relation
-
-**Third**:
-
-Confirm the Initial Value
+-->Confirm the Initial Value
 
 Example：[Fibonacci_dp](./Others/Fibonacci_dp.cpp)
 
@@ -160,6 +152,10 @@ Example：[Fibonacci_dp](./Others/Fibonacci_dp.cpp)
 3. Recursive
 
 Example:[LeetCode_131](./Others/Backtrack.cpp)
+
+#### Recursive
+
+* [reverse_list](./Others/reverse_list.cpp)
 
 #### Huffman
 
