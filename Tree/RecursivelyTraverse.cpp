@@ -1,28 +1,28 @@
 #include <iostream>
 using namespace std;
 struct Tree {
-  int Element;
-  Tree *Left;
-  Tree *Right;
+  int element;
+  Tree *left;
+  Tree *right;
 };
 void PreOrder(Tree *T) {
-  if (T != nullptr) {
-    std::cout << T->Element << endl;
-    PreOrder(T->Left);
-    PreOrder(T->Right);
+  if (T) {
+    std::cout << T->element << endl;
+    PreOrder(T->left);
+    PreOrder(T->right);
   }
 }
 void InOrder(Tree *T) {
-  if (T != nullptr) {
-    InOrder(T->Left);
-    std::cout << T->Element << endl;
-    InOrder(T->Right);
+  if (T) {
+    InOrder(T->left);
+    std::cout << T->element << endl;
+    InOrder(T->right);
   }
 }
 void PostOrder(Tree *T) {
-  if (T != nullptr) {
-    PostOrder(T->Left);
-    PostOrder(T->Right);
-    std::cout << T->Element << endl;
+  if (T) {
+    PostOrder(T->left);
+    PostOrder(T->right);
+    std::cout << T->element << endl;
   }
 }
