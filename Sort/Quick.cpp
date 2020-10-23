@@ -20,7 +20,7 @@ int Median3(int *v, int left, int right) {
   swap(v[center], v[right - 1]);
   return v[right - 1];
 }
-void QSort(int *v, int left, int right) {
+void QSort1(int *v, int left, int right) {
   int i, j, pivot;
   if (left + 10 <= right) {
     pivot = Median3(v, left, right);
@@ -37,9 +37,44 @@ void QSort(int *v, int left, int right) {
         break;
     }
     swap(v[i], v[right - 1]);
-    QSort(v, left, i - 1);
-    QSort(v, i + 1, right);
+    QSort1(v, left, i - 1);
+    QSort1(v, i + 1, right);
   } else {
     InsertSort(v, left, right);
+  }
+}
+
+int partition(vector<int> &nums, int left, int right) {
+  int pivot = nums[right];
+  int i = left, j = left;
+  while (j++ < right) {
+    if (nums[j] < pivot) {
+      swap(nums[i], nums[j]);
+      ++i;
+    }
+  }
+  swap(nums[right], nums[i]);
+  return i;
+}
+int partition2(vector<int> &nums, int left, int right) {
+  int pivot = nums[left];
+  int i = left + 1, j = right;
+  while (1) {
+    while (i <= j && nums[i] <= pivot)
+      ++i;
+    while (i <= j && nums[j] >= pivot)
+      --j;
+    if (i > j)
+      break;
+    swap(nums[i], nums[j]);
+  }
+  swap(nums[j], nums[left]);
+  return j;
+}
+void QSort2(vector<int> &nums, int left, int right) {
+  if (left < right) {
+    int mid = partition(nums, left, right);
+    QSort2(nums, left, mid - 1);
+    QSort2(nums, mid + 1, right);
   }
 }
