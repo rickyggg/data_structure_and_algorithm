@@ -1,13 +1,13 @@
 #include <string>
 using namespace std;
-static int cnt = 100;
+const int cnt = 100;
 int next1[cnt];
 int KMP(string t, string p) {
   int i, j;
   while (i < t.size() && j < p.size()) {
     if (j == -1 || t[i] == p[j]) {
-      i++;
-      j++;
+      ++i;
+      ++j;
     } else {
       j = next1[j];
     }
