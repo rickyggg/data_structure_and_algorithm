@@ -11,7 +11,7 @@ Array | Insert/Delete | O(n)
 
 ### [Stack](./DataStructure/Stack.cpp)
 
-### [Queue](./DataStructure/Queue.cpp)
+### [Queue](./DataStructure/Quene.cpp)
 
 ### [Heap](./DataStructure/Heap.cpp)
 
