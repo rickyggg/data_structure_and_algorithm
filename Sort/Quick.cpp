@@ -44,17 +44,18 @@ void QSort1(int *v, int left, int right) {
   }
 }
 
-int partition(vector<int> &nums, int left, int right) {
-  int pivot = nums[right];
-  int i = left, j = left;
-  while (j++ < right) {
-    if (nums[j] < pivot) {
-      swap(nums[i], nums[j]);
+int partition1(vector<int> &nums, int left, int right) {
+  int pivot = nums[left];
+  int i = left + 1, j = right;
+  while (i <= j) {
+    if (nums[i] <= pivot) {
       ++i;
+    } else {
+      swap(nums[i], nums[j--]);
     }
   }
-  swap(nums[right], nums[i]);
-  return i;
+  swap(nums[left], nums[j]);
+  return j;
 }
 int partition2(vector<int> &nums, int left, int right) {
   if (left == right)
