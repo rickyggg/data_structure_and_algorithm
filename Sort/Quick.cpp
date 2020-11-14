@@ -1,12 +1,13 @@
 // O(N log N)
 void InsertSort(vector<int> &nums, int left, int right) {
-  int j;
-  int temp;
-  for (int i = left; i <= right; i++) {
-    temp = nums[i];
-    for (j = i - 1; j >= 0 && nums[j] > temp; j--)
+  for (int i = left; i <= right; ++i) {
+    int key = nums[i];
+	int j = i - 1;
+    while ((j >= 0) && (nums[j] > key)) {
       nums[j + 1] = nums[j];
-    nums[j + 1] = temp;
+	  --j;
+	}
+    nums[j + 1] = key;
   }
 }
 int median3(vector<int> &nums, int left, int right) {
