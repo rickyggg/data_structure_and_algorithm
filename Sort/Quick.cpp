@@ -57,6 +57,8 @@ int partition(vector<int> &nums, int left, int right) {
   return i;
 }
 int partition2(vector<int> &nums, int left, int right) {
+  if (left == right)
+    return left;
   int pivot = nums[left];
   int i = left + 1, j = right;
   while (1) {
@@ -64,7 +66,7 @@ int partition2(vector<int> &nums, int left, int right) {
       ++i;
     while (i <= j && nums[j] >= pivot)
       --j;
-    if (i > j)
+    if (i >= j)
       break;
     swap(nums[i], nums[j]);
   }
