@@ -1,51 +1,29 @@
 // O(N log N)
-void InsertSort(int *list, int left, int right) {
+void InsertSort(vector<int> &nums, int left, int right) {
   int j;
   int temp;
   for (int i = left; i <= right; i++) {
-    temp = list[i];
-    for (j = i - 1; j >= 0 && list[j] > temp; j--)
-      list[j + 1] = list[j];
-    list[j + 1] = temp;
+    temp = nums[i];
+    for (j = i - 1; j >= 0 && nums[j] > temp; j--)
+      nums[j + 1] = nums[j];
+    nums[j + 1] = temp;
   }
 }
-int Median3(int *v, int left, int right) {
-  int center = (left + right) / 2;
-  if (v[left] > v[center])
-    swap(v[left], v[center]);
-  if (v[left] > v[right])
-    swap(v[left], v[right]);
-  if (v[center] > v[right])
-    swap(v[center], v[right]);
-  swap(v[center], v[right - 1]);
-  return v[right - 1];
+int median3(vector<int> &nums, int left, int right) {
+  int center = (left + right) >> 1;
+  if (nums[left] > nums[center])
+    swap(nums[left], nums[center]);
+  if (nums[left] > nums[right])
+    swap(nums[left], nums[right]);
+  if (nums[center] > nums[right])
+    swap(nums[center], nums[right]);
+  swap(nums[center], nums[left]);
+  return nums[left];
 }
-void QSort1(int *v, int left, int right) {
-  int i, j, pivot;
-  if (left + 10 <= right) {
-    pivot = Median3(v, left, right);
-    i = left;
-    j = right - 1;
-    while (1) {
-      while (v[++i] < pivot) {
-      }
-      while (v[--j] > pivot) {
-      }
-      if (i < j)
-        swap(v[i], v[j]);
-      else
-        break;
-    }
-    swap(v[i], v[right - 1]);
-    QSort1(v, left, i - 1);
-    QSort1(v, i + 1, right);
-  } else {
-    InsertSort(v, left, right);
-  }
-}
-
 int partition1(vector<int> &nums, int left, int right) {
-  int pivot = nums[left];
+  if (left == right)
+    return left;
+  int pivot = median3(nums, left, right);
   int i = left + 1, j = right;
   while (i <= j) {
     if (nums[i] <= pivot) {
@@ -60,7 +38,7 @@ int partition1(vector<int> &nums, int left, int right) {
 int partition2(vector<int> &nums, int left, int right) {
   if (left == right)
     return left;
-  int pivot = nums[left];
+  int pivot = median3(nums, left, right);
   int i = left + 1, j = right;
   while (1) {
     while (i <= j && nums[i] <= pivot)
@@ -74,10 +52,12 @@ int partition2(vector<int> &nums, int left, int right) {
   swap(nums[j], nums[left]);
   return j;
 }
-void QSort2(vector<int> &nums, int left, int right) {
-  if (left < right) {
-    int mid = partition(nums, left, right);
+void myQSort(vector<int> &nums, int left, int right) {
+  if (left + 12 <= right) {
+    int mid = partition2(nums, left, right);
     QSort2(nums, left, mid - 1);
     QSort2(nums, mid + 1, right);
+  } else {
+    InsertSort(nums, left, right);
   }
 }
