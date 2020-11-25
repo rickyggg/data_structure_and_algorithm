@@ -3,13 +3,13 @@
 using namespace std;
 static const int maxv = 10;
 static vector<int> G[maxv]; // Adjacency List
-void Sta_Indegree(vector<vector<int>> G, vector<int> &Indegree) {
+void Sta_Indegree(vector<vector<int>> &G, vector<int> &Indegree) {
   for (auto x : G) {
     for (auto y : x)
       Indegree[y]++;
   }
 }
-void TopSort(vector<vector<int>> G, int maxv, vector<int> &Indegree) {
+void TopSort(vector<vector<int>> &G, int maxv, vector<int> &Indegree) {
   int cnt = 0;
   queue<int> q;
   for (int i = 0; i < maxv; i++) {
