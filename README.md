@@ -32,7 +32,7 @@
 
 ### 排序
 
-#### Internal 排序
+#### 内排序
 
 排序算法 | 平均时间复杂度 | 最差时间复杂度 | 空间复杂度 | 稳定性
 --- | --- | --- | --- | ---
@@ -47,11 +47,11 @@
 [桶排序](./Sort/Bucket.cpp) | O(n+m)|O(n^2)|O(n+m)|稳定
 [基数排序](./Sort/Radix.cpp) | O(d*(n+m)) | O(d*(n+m))| O(n+m) |稳定
 
-> * Are arranged in ascending order
-> * n: represents the size of the data
-> * k: represents the max number of the data (Count 排序)
-> * m: represents the number of the buckets
-> * d: represents the number of "digits" in the value (Radix 排序)
+> * 默认为从小到大排序
+> * n: 数据规模
+> * k: 最大值
+> * m: 桶的数量
+> * d: 数的位数
 
 <!--
 * m: represents the maximum value minus the minimum value of the data
@@ -92,8 +92,8 @@
 [DFS](./Graph/DFS.cpp) | 邻接矩阵 | O(v^2) | O(v^2)
 \- | 邻接表 | O(v+e) | O(v+e)
 
-> * v: represents the number of the vertexs
-> * e: represents the number of the edges
+> * v: 顶点数量
+> * e: 边的数量
 
 #### 拓扑排序
 
@@ -107,10 +107,10 @@
 类型 | 算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | --- | ---
 [无权](./Graph/Unweighted.cpp) | BFS | 邻接表 | O(v+e) | O(v+e)
-有权 | [Dijkstra](./Graph/Dijkstra.cpp) | Fibonacci Heap | O(e+vlogv) | \-
+有权 | [Dijkstra](./Graph/Dijkstra.cpp) | Fibonacci堆 | O(e+vlogv) | \-
 \ | [Floyd](./Graph/Floyd.cpp) | 邻接矩阵 | O(v^3) | O(v^2)
 
-#### Minimum Spanning Tree
+#### 最小生成树
 
 算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | ---
@@ -129,9 +129,9 @@
 按秩归并 | O(m*logn) | O(n)
 两种优化 | O(a(n)) | O(n)
 
-> * a: represents the inverse Ackeramann function
-> * m: represents the number of 操作s
-> * n: represents the size of the data
+> * a: Ackeramann函数的逆
+> * m: 操作数量
+> * n: 数据规模
 
 #### 第K大
 
@@ -143,25 +143,25 @@
 
 #### 动态规划
 
-Define the 数组(save the history data) --> Find the Relation
+写出状态转移方程；
 
--->Confirm the Initial Value
+-->定义初始值；
 
-Example：[Fibonacci_dp](./Others/Fibonacci_dp.cpp)
+例子：[斐波那契数](./Others/Fibonacci_dp.cpp)
 
 #### 回溯
 
-1. Global Variable and Temp(save the result)
+1. 全局/类内变量保存结果
 
-2. End Condition
+2. 终止条件
 
-3. Recursive
+3. DFS递归
 
 Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 #### 递归
 
-* [reverse_list](./Others/reverse_list.cpp)
+* [翻转链表](./Others/reverse_list.cpp)
 
 #### Huffman编码
 
