@@ -1,35 +1,31 @@
 // O(N log N)
-void Merge(int *list, int *tmp, int first, int mid, int last) {
-  int i = first;
+void Merge(vector<int> &nums, vector<int> &temp, int left, int mid, int right) {
+  int i = left;
   int j = mid + 1;
-  int k = first;
-  while (i <= mid && j <= last) {
-    if (list[i] < list[j]) {
-      tmp[k++] = list[i++];
-    } else {
-      tmp[k++] = list[j++];
-    }
+  int k = left;
+  while (i <= mid && j <= right) {
+    if (nums[i] < nums[j])
+      temp[k++] = nums[i++];
+    else
+      temp[k++] = nums[j++];
   }
-  while (i <= mid) {
-    tmp[k++] = list[i++];
-  }
-  while (j <= last) {
-    tmp[k++] = list[j++];
-  }
-  for (i = first; i <= last; i++) {
-    list[i] = tmp[i];
-  }
+  while (i <= mid)
+    temp[k++] = nums[i++];
+  while (j <= right)
+    temp[k++] = nums[j++];
+
+  for (i = left; i <= right; i++)
+    nums[i] = temp[i];
 }
-void MergeSortPart(int *list, int *tmp, int first, int last) {
-  if (first >= last)
+void MergeSortPart(vector<int> &nums, vector<int> &temp, int left, int right) {
+  if (left >= right)
     return;
-  int mid = first + (last - first) / 2;
-  MergeSortPart(list, tmp, first, mid);
-  MergeSortPart(list, tmp, mid + 1, last);
-  Merge(list, tmp, first, mid, last);
+  int mid = left + (right - left) / 2;
+  MergeSortPart(nums, temp, left, mid);
+  MergeSortPart(nums, temp, mid + 1, right);
+  Merge(nums, temp, left, mid, right);
 }
-void MergeSort(int *list, int len) {
-  int *tmp = new int[len];
-  MergeSortPart(list, tmp, 0, len - 1);
-  delete[] tmp;
+void MergeSort(vector<int> &nums) {
+  vector<int> temp(nums.size(), 0);
+  MergeSortPart(nums, temp, 0, nums.size() - 1);
 }
