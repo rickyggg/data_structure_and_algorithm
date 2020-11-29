@@ -1,7 +1,7 @@
 <div align="center">
 简体中文
 &emsp;&emsp; | &emsp;&emsp;
-<a href="https://github.com/guojiarui1102/data_structure_and_算法/blob/master/README_en.md">English</a>
+<a href="https://github.com/guojiarui1102/data_structure_and_algorithm/README_en.md">English</a>
 </div>
 <br>
 
