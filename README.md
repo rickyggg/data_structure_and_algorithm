@@ -1,149 +1,155 @@
-# Data Structure and Algorithm in C++
+<div align="center">
+简体中文
+&emsp;&emsp; | &emsp;&emsp;
+<a href="https://github.com/guojiarui1102/data_structure_and_算法/blob/master/README_en.md">English</a>
+</div>
+<br>
 
-## Data Structure
+# 数据结构与算法（C++实现）
 
-### Linked List
+## 数据结构
 
-Data Structure | Operation | Average Time Complexity
+### 链表
+
+数据结构 | 操作 | 平均时间复杂度
 --- | --- | ---
-Array | Insert/Delete | O(n)
-[Linked List](./DataStructure/LinkedList.cpp) | \- | O(1)
+数组 | 插入/删除 | O(n)
+[链表](./DataStructure/LinkedList.cpp) | \- | O(1)
 
-### [Stack](./DataStructure/Stack.cpp)
+### [栈](./DataStructure/Stack.cpp)
 
-### [Queue](./DataStructure/Quene.cpp)
+### [队列](./DataStructure/Quene.cpp)
 
-### [Heap](./DataStructure/Heap.cpp)
+### [堆](./DataStructure/Heap.cpp)
 
-Operation | Average Time Complexity
+操作 | 平均时间复杂度
 --- | ---
-BuildHeap | O(n)
-Insert | O(logn)
-DeleteMin | O(logn)
+建堆 | O(n)
+插入 | O(logn)
+删除最值 | O(logn)
 
-## Algorithm
+## 算法
 
-### Sort
+### 排序
 
-#### Internal Sort
+#### Internal 排序
 
-Sorting Algorithm | Average Time Complexity | Worst Time Complexity | Spatial Complexity | Data Object Stability
+排序算法 | 平均时间复杂度 | 最差时间复杂度 | 空间复杂度 | 稳定性
 --- | --- | --- | --- | ---
-[Bubble Sort](./Sort/Bubble.cpp) | O(n^2)|O(n^2)|O(1)|Stable
-[Selection Sort](./Sort/Select.cpp) | O(n^2)|O(n^2)|O(1)|array -- unstable<br>linked list -- stable
-[Insert Sort](./Sort/Insert.cpp) | O(n^2)|O(n^2)|O(1)|Stable
-[Quick Sort](./Sort/Quick.cpp) | O(n*logn) | O(n^2) | O(logn) | Unstable
-[Heap Sort](./Sort/Heap.cpp) | O(n*logn)| O(n*logn)|O(1)|Unstable
-[Merge Sort](./Sort/Merge.cpp) | O(n*logn) | O(n*logn)|O(n)| Stable
-[Shell Sort](./Sort/Shell.cpp) | O(n*logn)|O(n^2)|O(1)|Unstable
-[Count Sort](./Sort/Count.cpp) | O(n+k)|O(n+k)|O(n+k)|Stable
-[Bucket Sort](./Sort/Bucket.cpp) | O(n+m)|O(n^2)|O(n+m)|Stable
-[Radix Sort](./Sort/Radix.cpp) | O(d*(n+m)) | O(d*(n+m))| O(n+m) |Stable
+[冒泡排序](./Sort/Bubble.cpp) | O(n^2)|O(n^2)|O(1)|稳定
+[选择排序](./Sort/Select.cpp) | O(n^2)|O(n^2)|O(1)|数组 -- 不稳定<br>链表 -- 稳定
+[插入排序](./Sort/Insert.cpp) | O(n^2)|O(n^2)|O(1)|稳定
+[快速排序](./Sort/Quick.cpp) | O(n*logn) | O(n^2) | O(logn) | 不稳定
+[堆排序](./Sort/Heap.cpp) | O(n*logn)| O(n*logn)|O(1)|不稳定
+[归并排序](./Sort/Merge.cpp) | O(n*logn) | O(n*logn)|O(n)| 稳定
+[希尔排序](./Sort/Shell.cpp) | O(n*logn)|O(n^2)|O(1)|不稳定
+[计数排序](./Sort/Count.cpp) | O(n+k)|O(n+k)|O(n+k)|稳定
+[桶排序](./Sort/Bucket.cpp) | O(n+m)|O(n^2)|O(n+m)|稳定
+[基数排序](./Sort/Radix.cpp) | O(d*(n+m)) | O(d*(n+m))| O(n+m) |稳定
 
 > * Are arranged in ascending order
 > * n: represents the size of the data
-> * k: represents the max number of the data (Count Sort)
+> * k: represents the max number of the data (Count 排序)
 > * m: represents the number of the buckets
-> * d: represents the number of "digits" in the value (Radix Sort)
+> * d: represents the number of "digits" in the value (Radix 排序)
 
 <!--
 * m: represents the maximum value minus the minimum value of the data
 -->
 
-#### External Sort
+#### 外部排序
 
-### Find
+### 查找
 
-Find Algorithm | Average Time Complexity | Spatial Complexity
+查找算法 | 平均时间复杂度 | 空间复杂度
 --- | --- | ---
-[Sequential Search](./Find/Sequential.cpp) | O(n) | O(1)
-[Binary Search](./Find/Binary.cpp) | O(logn) | O(1)
-[Binary Search Tree](./Find/BST.cpp) | O(logn) | O(1)
-[Hash Search](./Find/Hash.cpp) | O(1) | O(n)
+[遍历查找](./Find/Sequential.cpp) | O(n) | O(1)
+[二分查找](./Find/Binary.cpp) | O(logn) | O(1)
+[二分查找树](./Find/BST.cpp) | O(logn) | O(1)
+[Hash查找](./Find/Hash.cpp) | O(1) | O(n)
 
-### Tree
+### 树
 
-#### Tree Traversal
+#### 树的遍历
 
-[Tree Travelsal Recursion](./Tree/RecursivelyTraverse.cpp)
+[递归遍历](./Tree/RecursivelyTraverse.cpp)<br>
+非递归遍历
 
-Without Recursive
-
-#### Self-Balanced tree
+#### 平衡树
 
 [AVL](./Tree/AVL.cpp)
 
 [RbTree](./Tree/RbTree.cpp)
 
-### Graph
+### 图
 
-#### Graph Traversal
+#### 图的遍历
 
-Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
+算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | ---
-[BFS](./Graph/BFS.cpp) | Adjacency Matrix | O(v^2) | O(v^2)
-\- | Adjacency List | O(v+e) | O(v+e)
-[DFS](./Graph/DFS.cpp) | Adjacency Matrix | O(v^2) | O(v^2)
-\- | Adjacency List | O(v+e) | O(v+e)
+[BFS](./Graph/BFS.cpp) | 邻接矩阵 | O(v^2) | O(v^2)
+\- | 邻接表 | O(v+e) | O(v+e)
+[DFS](./Graph/DFS.cpp) | 邻接矩阵 | O(v^2) | O(v^2)
+\- | 邻接表 | O(v+e) | O(v+e)
 
 > * v: represents the number of the vertexs
 > * e: represents the number of the edges
 
-#### Top Sort
+#### 拓扑排序
 
-Alogorithm | Data Structure | Average Time Complexity | Spatial Complexity
+算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | ---
-[TopSort](./Graph/TopSort.cpp) | Adjacency Matrix | O(v^2) | O(v^2)
-\- | Adjacency List | O(v+e) | O(v+e)
+[Top排序](./Graph/Top排序.cpp) | 邻接矩阵 | O(v^2) | O(v^2)
+\- | 邻接表 | O(v+e) | O(v+e)
 
-#### Shortest Path
+#### 最短路
 
-Category | Algorithm | Data Structure | Average Time Complexity | Spatial Complexity
+类型 | 算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | --- | ---
-[Unweighted](./Graph/Unweighted.cpp) | BFS | Adjacency List | O(v+e) | O(v+e)
-weighted | [Dijkstra](./Graph/Dijkstra.cpp) | Fibonacci Heap | O(e+vlogv) | \-
-Both | [Floyd](./Graph/Floyd.cpp) | Adjacency Matrix | O(v^3) | O(v^2)
+[无权](./Graph/Unweighted.cpp) | BFS | 邻接表 | O(v+e) | O(v+e)
+有权 | [Dijkstra](./Graph/Dijkstra.cpp) | Fibonacci Heap | O(e+vlogv) | \-
+\ | [Floyd](./Graph/Floyd.cpp) | 邻接矩阵 | O(v^3) | O(v^2)
 
 #### Minimum Spanning Tree
 
-Algorithm | Data Structure | Average Time Complexity | Spatial Complexity
+算法 | 数据结构 | 平均时间复杂度 | 空间复杂度
 --- | --- | --- | ---
-[Prim](./Graph/Prim.cpp) | Adjacency Matrix | O(v^2) | O(v^2)
-\- | Binary Heap | O(elogv) | \-
-[Kruskal](./Graph/Kruskal.cpp) | Heap | O(elogv) | \-
+[Prim](./Graph/Prim.cpp) | 邻接矩阵 | O(v^2) | O(v^2)
+\- | 二叉堆 | O(elogv) | \-
+[Kruskal](./Graph/Kruskal.cpp) | 堆 | O(elogv) | \-
 
-### Others
+### 其他
 
-#### [Disjoint Sets](./Others/DisjointSets.cpp)
+#### [并查集](./Others/DisjointSets.cpp)
 
-Alogorithm | Average Time Complexity | Spatial Complexity
+算法 | 平均时间复杂度 | 空间复杂度
 --- | --- | ---
-Without Optimization | O(m*n) | O(n)
-Union by Size | O(m*logn) | O(n)
-Path Compression | O(m*logn) | O(n)
-Both Opimization | O(a(n)) | O(n)
+无优化 | O(m*n) | O(n)
+路经压缩 | O(m*logn) | O(n)
+按秩归并 | O(m*logn) | O(n)
+两种优化 | O(a(n)) | O(n)
 
 > * a: represents the inverse Ackeramann function
-> * m: represents the number of operations
+> * m: represents the number of 操作s
 > * n: represents the size of the data
 
-#### Kth Largest
+#### 第K大
 
-Alogorithm | Average Time Complexity | Worst Time Complexity
+算法 | 平均时间复杂度 | 最差时间复杂度
 --- | --- | ---
-Normal | O(n^2) | O(n^2)
-Heap | O(n*logn) | O(n*logn)
-QSelect | O(n) | O(n^2)
+普通 | O(n^2) | O(n^2)
+堆 | O(n*logn) | O(n*logn)
+快排思想 | O(n) | O(n^2)
 
-#### Dynamic Programming
+#### 动态规划
 
-Define the Array(save the history data) --> Find the Relation
+Define the 数组(save the history data) --> Find the Relation
 
 -->Confirm the Initial Value
 
 Example：[Fibonacci_dp](./Others/Fibonacci_dp.cpp)
 
-#### Backtrack
+#### 回溯
 
 1. Global Variable and Temp(save the result)
 
@@ -153,10 +159,10 @@ Example：[Fibonacci_dp](./Others/Fibonacci_dp.cpp)
 
 Example:[LeetCode_131](./Others/Backtrack.cpp)
 
-#### Recursive
+#### 递归
 
 * [reverse_list](./Others/reverse_list.cpp)
 
-#### Huffman
+#### Huffman编码
 
 #### KMP
