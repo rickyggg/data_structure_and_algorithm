@@ -72,8 +72,8 @@
 
 #### 树的遍历
 
-[递归遍历](./Tree/RecursivelyTraverse.cpp)<br>
-非递归遍历
+[递归遍历](./Tree/RecursivelyTraverse.cpp)
+[非递归遍历](./Tree/traverse_without_recursive.cpp)
 
 #### 平衡树
 
