@@ -72,14 +72,13 @@
 
 #### 树的遍历
 
-[递归遍历](./Tree/RecursivelyTraverse.cpp)
-[非递归遍历](./Tree/traverse_without_recursive.cpp)
+* [递归遍历](./Tree/RecursivelyTraverse.cpp)
+* [非递归遍历](./Tree/traverse_without_recursive.cpp)
 
 #### 平衡树
 
-[AVL](./Tree/AVL.cpp)
-
-[RbTree](./Tree/RbTree.cpp)
+* [AVL](./Tree/AVL.cpp)
+* [RbTree](./Tree/RbTree.cpp)
 
 ### 图
 

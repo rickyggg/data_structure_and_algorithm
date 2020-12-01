@@ -65,14 +65,13 @@ Find Algorithm | Average Time Complexity | Spatial Complexity
 
 #### Tree Traversal
 
-[Tree Travelsal Recursion](./Tree/RecursivelyTraverse.cpp)
-[Without Recursive](./Tree/traverse_without_recursive.cpp)
+* [Tree Travelsal Recursion](./Tree/RecursivelyTraverse.cpp)
+* [Without Recursive](./Tree/traverse_without_recursive.cpp)
 
 #### Self-Balanced tree
 
-[AVL](./Tree/AVL.cpp)
-
-[RbTree](./Tree/RbTree.cpp)
+* [AVL](./Tree/AVL.cpp)
+* [RbTree](./Tree/RbTree.cpp)
 
 ### Graph
 
