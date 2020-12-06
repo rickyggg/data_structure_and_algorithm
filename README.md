@@ -162,6 +162,8 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 * [翻转链表](./Others/reverse_list.cpp)
 
+#### [Singleton](./Others/singleton.cpp)
+
 #### Huffman编码
 
 #### KMP
