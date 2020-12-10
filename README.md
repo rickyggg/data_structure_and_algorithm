@@ -164,6 +164,8 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 #### [Singleton](./Others/singleton.cpp)
 
+#### [LRU](./Others/lru.cpp)
+
 #### Huffman编码
 
 #### KMP

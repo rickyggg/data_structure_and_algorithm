@@ -155,6 +155,10 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 * [reverse_list](./Others/reverse_list.cpp)
 
+#### [Singleton](./Others/singleton.cpp)
+
+#### [LRU](./Others/lru.cpp)
+
 #### Huffman
 
 #### KMP
