@@ -166,6 +166,10 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 #### [LRU](./Others/lru.cpp)
 
+#### 背包问题
+
+* [0-1背包](./Others/0-1knapsack.cpp)
+
 #### Huffman编码
 
 #### KMP

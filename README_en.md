@@ -159,6 +159,10 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 #### [LRU](./Others/lru.cpp)
 
+#### Knapsack
+
+* [0-1knapsack](./Others/0-1knapsack.cpp)
+
 #### Huffman
 
 #### KMP
