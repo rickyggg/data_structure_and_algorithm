@@ -172,8 +172,8 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 #### 概率问题
 
-* [randcoin](./Others/randcoin.cpp)
-* [rand5to7](./Others/rand5to7.cpp)
+* [不均匀硬币实现等概率](./Others/randcoin.cpp)
+* [rand5()实现rand7()](./Others/rand5to7.cpp)
 
 #### Huffman编码
 

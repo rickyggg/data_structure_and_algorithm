@@ -163,6 +163,11 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 * [0-1knapsack](./Others/0-1knapsack.cpp)
 
+#### probability
+
+* [uneven coins](./Others/randcoin.cpp)
+* [rand5()torand7()](./Others/rand5to7.cpp)
+
 #### Huffman
 
 #### KMP
