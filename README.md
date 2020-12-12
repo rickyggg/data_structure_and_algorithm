@@ -170,6 +170,11 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 * [0-1背包](./Others/0-1knapsack.cpp)
 
+#### 概率问题
+
+* [randcoin](./Others/randcoin.cpp)
+* [rand5to7](./Others/rand5to7.cpp)
+
 #### Huffman编码
 
 #### KMP
