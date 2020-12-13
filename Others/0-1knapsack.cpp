@@ -30,5 +30,5 @@ int main() {
   int v = 5;
   vector<int> c = {1, 2, 3, 4};
   vector<int> w = {2, 4, 4, 5};
-  cout << solve2(v, c, w) << endl;
+  cout << solve2(v, c, w);
 }
