@@ -162,9 +162,12 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 
 * [翻转链表](./Others/reverse_list.cpp)
 
-#### [Singleton](./Others/singleton.cpp)
+#### [单例模式](./Others/singleton.cpp)
 
-#### [LRU](./Others/lru.cpp)
+#### LRU
+
+* [不使用STL](./Others/lru.cpp)
+* [使用STL](./Others/lru_stl.cpp)
 
 #### 背包问题
 
