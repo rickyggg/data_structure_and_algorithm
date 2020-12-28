@@ -2,11 +2,11 @@
 void InsertSort(vector<int> &nums, int left, int right) {
   for (int i = left; i <= right; ++i) {
     int key = nums[i];
-	int j = i - 1;
+    int j = i - 1;
     while ((j >= 0) && (nums[j] > key)) {
       nums[j + 1] = nums[j];
-	  --j;
-	}
+      --j;
+    }
     nums[j + 1] = key;
   }
 }
@@ -40,6 +40,7 @@ int partition2(vector<int> &nums, int left, int right) {
   if (left == right)
     return left;
   int pivot = median3(nums, left, right);
+  // int pivot = nums[left];
   int i = left + 1, j = right;
   while (1) {
     while (i <= j && nums[i] <= pivot)
