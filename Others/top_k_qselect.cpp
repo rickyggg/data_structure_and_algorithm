@@ -35,4 +35,20 @@ public:
     vector<int> res(input.begin(), input.begin() + k);
     return res;
   }
+
+  vector<int> find_kth(vector<int> &nums, int n, int k) {
+    int left = 0, right = n - 1;
+    k = n - k;
+    while (1) {
+      int pivot = Partition(numsm, left, right);
+      if (pivot == k) {
+        return nums[pivot];
+      } else if (pivot > k) {
+        right = pivot - 1;
+      } else if (pivot < k) {
+        left = pivot + 1;
+      }
+    }
+    return 0;
+  }
 };
