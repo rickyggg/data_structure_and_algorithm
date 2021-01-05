@@ -40,7 +40,7 @@ public:
     int left = 0, right = n - 1;
     k = n - k;
     while (1) {
-      int pivot = Partition(numsm, left, right);
+      int pivot = Partition(nums, left, right);
       if (pivot == k) {
         return nums[pivot];
       } else if (pivot > k) {
