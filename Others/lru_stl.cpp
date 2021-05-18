@@ -1,51 +1,55 @@
-class Solution {
+struct Node {
+  Node(int key, int val) : key(key), val(val) {}
+
+  int key = -1;
+  int val = -1;
+  list<Node *>::iterator iter;
+}
+
+class LRUCache {
 public:
-    /**
-     * lru design
-     * @param operators int整型vector<vector<>> the ops
-     * @param k int整型 the k
-     * @return int整型vector
-     */
-    #define PII pair<int, int>
-    int capacity = 0;
-    list<PII> lrulist;
-    unordered_map<int, list<PII>::iterator> cache;
-    vector<int> LRU(vector<vector<int>>& operators, int k) {
-        vector<int> result;
-        capacity = k;
-        result.reserve(operators.size());
-        if (k != 0) {
-            for (auto &opt : operators) {
-                if (opt[0] == 1)
-                    set(opt[1], opt[2]);
-                else if (opt[0] == 2)
-                    result.push_back(get(opt[1]));
-            }
-        }
-        return result;
+  LRUCache(int capacity) : capacity(capacity) {}
+
+  int get(int key) {
+    auto iter = m.find(key);
+    if (m.end() == iter) {
+      return -1;
     }
-    
-    void set(int key, int val) {
-        auto iter = cache.find(key);
-        if (iter == cache.end()) {
-            if (capacity == lrulist.size()) {
-                cache.erase(lrulist.back().first);
-                lrulist.pop_back();
-            }
-        } else {
-            lrulist.erase(iter->second);
-        }
-        lrulist.push_front(make_pair(key, val));
-        cache[key] = lrulist.begin();
+    int val = iter->second->val;
+    put(key, val);
+
+    return val;
+  }
+
+  void put(int key, int value) {
+    auto iter = m.find(key);
+    if (m.end() != iter) {
+      cache.splice(cache.begin(), cache, iter->second->iter);
+      iter->second->val = value;
+    } else {
+      if (cache.size() == capacity) {
+        Node *lastNode = cahce.back();
+        int deleteKey = lastNode->key;
+        cache.pop_back();
+        delete lastNode;
+        m.erase(deleteKey);
+      }
+      Node *node = new Node(key, value);
+      cache.push_front(node);
+      node->iter = cache.begin();
+      m[key] = node;
     }
-    
-    int get(int key) {
-        auto iter = cache.find(key);
-        if (iter == cache.end())
-            return -1;
-        int val = iter->second->second;
-        lrulist.erase(iter->second);
-        lrulist.push_front(*iter->second);
-        return val;
-    }
+  }
+
+private:
+  unordered_map<int, Node *> m;
+  list<Node *> cache;
+  int capacity = 1;
 };
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache* obj = new LRUCache(capacity);
+ * int param_1 = obj->get(key);
+ * obj->put(key,value);
+ */
