@@ -28,7 +28,7 @@ public:
       iter->second->val = value;
     } else {
       if (cache.size() == capacity) {
-        Node *lastNode = cahce.back();
+        Node *lastNode = cache.back();
         int deleteKey = lastNode->key;
         cache.pop_back();
         delete lastNode;
