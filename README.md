@@ -181,7 +181,3 @@ Example:[LeetCode_131](./Others/Backtrack.cpp)
 * [rand5()实现rand7()](./Others/rand5to7.cpp)
 
 #### [快速乘与快速幂](./Others/ksm.cpp)
-
-#### Huffman编码
-
-#### KMP
